@@ -1,5 +1,5 @@
 //error wrapper for fetch
-const fetch = function(url, options) {
+fetch = function(url, options) {
     var promise = require('node-fetch')(url, options).then(function(response) {
         return response;
     }).catch(error => console.error(`fetch error: ${error}`));
