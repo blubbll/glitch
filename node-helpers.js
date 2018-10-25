@@ -1,4 +1,4 @@
-//error wrapper for fetch
+//error wrapper for fetch (node.js will fail on umhandled promise fails in the future, so this will be needed)
 fetch = function(url, options) {
     var promise = require('node-fetch')(url, options).then(function(response) {
         return response;
