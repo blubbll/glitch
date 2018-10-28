@@ -34,4 +34,4 @@ class SubPromise extends Promise {
         return super.then(null, console.log('promise error'));
     }
 }
-window.Promise = SubPromise;
+Promise = SubPromise;
