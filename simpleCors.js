@@ -6,4 +6,4 @@
       callback(new Error('Not allowed by CORS'))
     }
   }
-}),app.use('*', cors);]
+}),app.use(simpleCors.routes, cors);]
