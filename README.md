@@ -8,3 +8,5 @@
 - simpleCors: simple cors helper. Simply give it a list of allowed hosts.
 
 - remquire: async script injecting, only use when you know what you're doing
+
+- tools.js - simpel clientside js tools
