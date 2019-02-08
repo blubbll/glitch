@@ -99,3 +99,14 @@ var b = {
     firefox: navigator.userAgent.toLowerCase().indexOf('firefox') > -1,
     mobile: this.ichrome || window.isMobile.any || false
 }
+
+window.flexbox = function() {
+    var t = "flex",
+        e = "-webkit-".concat(t),
+        l = document.createElement("b");
+    try {
+        return l.style.display = e, l.style.display = t, !(l.style.display !== t && l.style.display !== e)
+    } catch (t) {
+        return !1
+    }
+}();
